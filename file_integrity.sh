@@ -24,7 +24,7 @@ if [[ "$1" == "--reset" ]]; then
 fi
 
 # Exit if no baseline file exists
-if [ ! -s "$BASELINE_FILE" ]; then
+if [[ ! -s "$BASELINE_FILE" ]]; then
     echo "[ERROR] No baseline found. Please run: sudo ./file_integrity.sh --reset"
     exit 1
 fi
