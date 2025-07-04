@@ -3,6 +3,9 @@
 This is a Bash-based File Integrity Monitoring (FIM) tool designed to monitor the /etc directory for unauthorized changes. It helps in detecting any added, deleted, or modified files.
 
 
+
+
+
 ### **Key Features**
 
 1.Monitors critical system directory /etc
@@ -16,6 +19,9 @@ This is a Bash-based File Integrity Monitoring (FIM) tool designed to monitor th
 5.Includes a --reset option to create a new baseline
 
 
+
+
+
 ### **Folder Structure**
 
  file_integrity.sh         # Main script
@@ -23,21 +29,33 @@ This is a Bash-based File Integrity Monitoring (FIM) tool designed to monitor th
  logs/
      alerts_<timestamp>.log  # Scan result logs
 
+
+     
+
 ### **Make the script executable**
 
 chmod +x file_integrity.sh
+
+
+
 
 ### **Create a baseline (required before scanning)**
 
 sudo ./file_integrity.sh --reset
 
-### **Scan for changes**
+Use --reset to generate a snapshot of all files in /etc.
 
-sudo ./file_integrity.sh
+Do this only once and after that only when you want to update the baseline.hases file
+
+
+
 
 ### **View alert logs**
 
 cat logs/alerts_<timestamp>.log
+
+
+
 
 ***Notes***
 
