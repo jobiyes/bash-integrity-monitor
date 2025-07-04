@@ -4,8 +4,6 @@ This is a Bash-based File Integrity Monitoring (FIM) tool designed to monitor th
 
 
 
-
-
 ## Key Features
 
 1.Monitors critical system directory /etc
@@ -20,25 +18,19 @@ This is a Bash-based File Integrity Monitoring (FIM) tool designed to monitor th
 
 
 
-
-
 ## Folder Structure
 
- file_integrity.sh         # Main script
- 
- baseline.hashes           # Stored baseline hashes
- 
- logs/
- 
- alerts_<timestamp>.log  # Scan result logs
+ Basic-IDS-using-BASH/
+├── file_integrity.sh      # Main script
+├── baseline.hashes        # Stored baseline hashes
+├── logs/                  # Directory for log files
+│   └── alerts_.log        # Log file for alerts
 
-
-     
+  
 
 ## Make the script executable
 
 chmod +x file_integrity.sh
-
 
 
 
@@ -52,11 +44,9 @@ Do this only once and after that only when you want to update the baseline.hases
 
 
 
-
 ## View alert logs
 
 cat logs/alerts_<timestamp>.log
-
 
 
 
