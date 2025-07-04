@@ -14,7 +14,7 @@ This is a Bash-based File Integrity Monitoring (FIM) tool designed to monitor th
 
 4.Logs results with timestamps in a separate logs/ folder
 
-5.Includes a --reset option to create a new baseline
+5.Includes a ```--reset``` option to create a new baseline
 
 
 
@@ -30,9 +30,9 @@ Basic-IDS-using-BASH/
   
 
 ## Make the script executable
-
+```
 chmod +x file_integrity.sh
-
+```
 
 
 ## Create a baseline (required before scanning)
@@ -40,23 +40,23 @@ chmod +x file_integrity.sh
 sudo ./file_integrity.sh --reset
 ```
 
-Use --reset to generate a snapshot of all files in /etc.
+Use ```--reset``` to generate a snapshot of all files in /etc.
 
 Do this only once and after that only when you want to update the baseline.hases file
 
 
 
 ## View alert logs
-
+```
 cat logs/alerts_<timestamp>.log
-
+```
 
 
 ***Notes***
 
 You must run the script with sudo to access all files in /etc.
 
-Do not edit baseline.hashes manually.
+Do not edit ```baseline.hashes``` manually.
 
 Logs are stored in the logs/ folder.
 
