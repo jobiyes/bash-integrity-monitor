@@ -6,15 +6,15 @@ This is a Bash-based File Integrity Monitoring (FIM) tool designed to monitor th
 
 ## Key Features
 
-1.Monitors critical system directory /etc
+1. Monitors critical system directory /etc
 
-2.Detects file additions, deletions, and modifications
+2. Detects file additions, deletions, and modifications
 
-3.Uses sha256sum for hashing files
+3. Uses sha256sum for hashing files
 
-4.Logs results with timestamps in a separate logs/ folder
+4. Logs results with timestamps in a separate logs/ folder
 
-5.Includes a ```--reset``` option to create a new baseline
+5. Includes a ```--reset``` option to create a new baseline
 
 
 
