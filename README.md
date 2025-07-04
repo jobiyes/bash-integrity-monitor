@@ -25,9 +25,12 @@ This is a Bash-based File Integrity Monitoring (FIM) tool designed to monitor th
 ## Folder Structure
 
  file_integrity.sh         # Main script
+ 
  baseline.hashes           # Stored baseline hashes
+ 
  logs/
-     alerts_<timestamp>.log  # Scan result logs
+ 
+ alerts_<timestamp>.log  # Scan result logs
 
 
      
