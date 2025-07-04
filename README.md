@@ -36,8 +36,9 @@ chmod +x file_integrity.sh
 
 
 ## Create a baseline (required before scanning)
-
+```
 sudo ./file_integrity.sh --reset
+```
 
 Use --reset to generate a snapshot of all files in /etc.
 
