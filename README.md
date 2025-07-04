@@ -62,7 +62,7 @@ Logs are stored in the logs/ folder.
 
 The script currently monitors only /etc. 
 
-To monitor other directories, edit the MONITOR_DIR variable inside the script.
+To monitor other directories, edit the ```MONITOR_DIR``` variable inside the script.
 
 
 
