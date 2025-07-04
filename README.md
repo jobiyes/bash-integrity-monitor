@@ -24,7 +24,7 @@ This is a Bash-based File Integrity Monitoring (FIM) tool designed to monitor th
   ├── file_integrity.sh      # Main script
   ├── baseline.hashes        # Stored baseline hashes
   ├── logs/                  # Directory for log files
-  │     └── alerts_.log        # Log file for alerts
+  │       └── alerts_.log    # Log file for alerts
 
 ```
   
